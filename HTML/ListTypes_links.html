@@ -9,34 +9,59 @@
         <link rel = "icon" href = "images/list.png">
         <link rel  = "stylesheet" href = "cssFiles/ListTypes.css">
     </head>
-
+    
     <body>
+    <section id="ordered list">
         <h1>Hey there, fancy meeting you here again hahahaha</h1>
-
+        
         <p>Alrighty, this begins a new paragraph</p>
         <ol>
             <li>This is the first element of the ordered list</li>
             <li>This is the second element of the ordered list</li>
             <li>And finally, this is the third (and final) element of the ordered list</li>
         </ol>
-
+    </section>
+    
+        <hr>
+    <section id="unordered list">
         <h2>Let's take a look at an unordered list</h2>
         <ul>
             <li><p>just a random paragraph nothing to see here</p></li> <!--Pragraph elements end with with an empty line at the bottom: not the work of the lists-->
             <li>If you haven't noticed, it's just a list enumerated by dots</li>
             <li>Hey this kinda reminds me of notion 👀</li>
         </ul>
+    </section>
+        <hr>
 
+    <section id="descriptive list">
         <h2>Time to check out what a descriptive list is </h2>
         <dl>
             <dt>Capybara</dt>
-                <dd>Most fabulous animal ever</dd>
+                <dd>Most fabulous animal ever. click <a href = "https://en.wikipedia.org/wiki/Capybara">here</a> to learn more about em</dd> <!--Absolute reference: refernce pointing  towards a different HTML document not located within the 
+                
+            <h2> Anchor link</h2>
+            <p></PI will insert a link (this one) that is directed towards a differnet part of this page>-->
             <dt>Me</dt>
-                <dd>Greatest human being to ever walk God's greem earth</dd>
+                <dd>Greatest human being to ever walk God's green earth</dd>
             <dt>You</dt>
                 <dd>Also the greatest person to ever walk God's green earth</dd>
             <dt>Jesus Christ</dt>
                 <dd>Nevermind, it's this guy lol</dd>
         </dl>
+    </section>
+        <hr>
+    <section id = "relative references">
+        <!-- Practicing relative references-->
+        <h2>The previous lesson</h2>
+            <p><a href ="index_2.html">this</a> will take you directly to the previous file</p>
+
+        <h2> Anchor link</h2>
+            <p>I will insert a link (<a href = "#unordered list">this</a> one) that is directed towards a differnet part of this page</P>
+                <dl>
+                    <dt> This leads to the unordered list section</dt>
+                        <dd>*second one</dd>
+                    <dt> just for practice, this <a href="https://www.womansday.com/life/g32979681/cute-cat-photos/" target = "_blank">link</a> leads to a random website (in a different tab this time)
+                </dl>
+    </section>
     </body>
 </html>
