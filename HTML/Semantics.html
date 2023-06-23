@@ -14,36 +14,53 @@
     <header>
         <h1>Main heading of the page</h1>
         <nav>
-            <a href="#Section 1">First section</a> <br>
-            <a href="#Section 2">Second section</a> <br>
-            <a href="#Section 3">Third section</a> <br>
+            <a href="#first topic">First section</a> <br>
+            <a href="#second topic">Second section</a> <br>
+            <a href="#third topic">Third section</a> <br>
         </nav>
     </header>
     <hr>
 
     <main>
-        <section id = "Section 1">
+        <article id = "first topic"> <!-- Articles will be used to differentiate topics, 
+            sections are generic dividersw-->
             <h2>Section 1</h2>
-            <p>Here we have text for the first section of this document</p>
-            <hr>
-        </section>
+            <p>Here we have text for the first article of this document</p>
+        </article>
+        <hr>
 
-        <section id = "section 2">
+        <article id = "second topic">
             <h2>Section 2</h2>
-            <p>Here we have text for the second section of this document</p>
-            <hr>
-        </section>
+            <p>Here we have text for the second article of this document</p>
+            <section>
+                <figure>
+                    <img src="images/MaxwellsEquations.jpg" alt="list of Maxwell's Equations in both differntial and integral form" width = "1200" height="841">
+                    <caption>Figure 1. List of Maxwell's Equations in both intgral and differential form</caption>
+                </figure>
+                <aside>
+                    <details>
+                        <summary>I included this equation for the sake of practicing figures.</summary>
+                        <p>Can't wait to learn about this in electromagnetic physics.</p>
+                    </details>
+                </aside>
+            </section>
+        </article>
+        <hr>
 
-        <section id = "section 3">            
+        <article id = "third topic">            
             <h2>Section 3</h2>
-            <p>Here we have text for the third section of this document</p>
-        </section>
+            <p>Here we have text for the third article of this document. And as I go further into this section of the page
+                I will display the<br>mark element, of which <mark>highlight's the text within it</mark>. The time element &rarr;
+                <time datetime="12:00">11:58</time>&larr; adds semantic meaning to the current time at which I am typing this.
+            </p>
+        </article>
+        <hr>
     </main>
     
     <!-- Typically placed at the bottom of a page, containing information related 
     to the document, authorship, copyright, contact details, or navigation links.-->
     <footer>
-
+        <p>&lt;&lt;&lt;&lt; Property of Davey Ezuma &copy; &gt;&gt;&gt;&gt;</p>
     </footer>
 </body>
 </html>
