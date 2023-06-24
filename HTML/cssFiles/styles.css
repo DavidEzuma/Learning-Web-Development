@@ -2,19 +2,36 @@ body {
     margin: 0;
     padding: 0;
     color: white;
-    background-color: rgb(53, 53, 53);
+    background-color: #6A6A6A;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    height: 10px;
+    align-items: center;
+
 }
 
 .container {
-    width: 700px;
-    height: 800px;
-    margin: 0 auto;
-    border: black;
+    width: 100px;
+    height: 200px;
+    padding: 1em;
+    border: 5px solid black;
+    border-radius: 5%;
 
+}
+
+.navigation-button {
+    display: flex;
+    justify-content: center;
+    border: 4px solid #EFBB09;
+    background-color: #FFE58B;
+    border-radius: 5%;
+    
+}
+
+table, tr, th, td, caption{
+    margin-top: 1000px;
+    border: 1px solid #eee;
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+    border-collapse:collapse;
+    padding: 0.5rem;
 }
