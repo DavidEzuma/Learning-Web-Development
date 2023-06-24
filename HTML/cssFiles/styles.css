@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(53, 53, 53);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 10px;
+}
+
+.container {
+    width: 700px;
+    height: 800px;
+    margin: 0 auto;
+    border: black;
+
+}
