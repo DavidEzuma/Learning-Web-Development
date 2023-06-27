@@ -53,12 +53,19 @@ try {
     console.log("error");
 }
 finally {
-    console("to be ran at the end of try catch");
+    console.log("to be ran at the end of try catch");
 }
 
-if (true){
-    var l = "Hey there"
-    let m = "hey again"
+if (true) {
+    var l = "Hey there";     //l should be hoisted, since it was defined with the var literal
+    let m = "hey again";     //m cannot be hoisted, since it was defined with the let literal
+
 }
-comsole.log(l);
-console.log(m);a
+console.log(l+" (could be hoisted from a block statement, for it was instantiated with 'var')\n");
+try {
+    console.log(m);
+} catch (ReferenceError) {
+    console.log("m cannot be hoisted - innstantiated with 'let'");
+} 
+
+
