@@ -68,4 +68,33 @@ try {
     console.log("m cannot be hoisted - innstantiated with 'let'");
 } 
 
+//closures
+
+const ReversedWordMaker = function(array)
+{
+    let word = "";  //can be referenced by a funciton within the parent block
+    for (let i = 0; i < array.length; i++)
+    {
+        word += array[i];
+    }
+
+    return reverse(word);   // 'word' variable will be kept in memory (heap), since it is a closure.
+}
+
+const arr3 = ["a","m","o","n","g"," ","u","s"];
+console.log(ReversedWordMaker(arr3));
+
+const obj = {   //an object is a collection of key value pairs.
+    name : "clown",
+    face : "🤡",
+    age : "100",
+    greeting : function(){
+        console.log("Hello, my name is "+this.name+" and I am "+this.age+" years old. "+this.face); //'this' references the object as a whole
+    },
+    greeting2: () => {
+      console.log(this) //'this' references the global object, since it is a arrow function. In the context of web development, the window Object
+    }
+}
+
+obj.greeting();
 
