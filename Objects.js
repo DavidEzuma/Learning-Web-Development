@@ -29,4 +29,5 @@ const Organism = {
 const Panda = Object.create(Organism);  //best when wanting to establish inheritance
 
 console.log(Panda.DNA);
+console.log(Object.getPrototypeOf(Panda));
 //--------------------------------------------------------
